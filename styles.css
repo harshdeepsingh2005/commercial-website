@@ -1,0 +1,48 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("https://tse2.mm.bing.net/th?id=OIP.qFichfabPw-8oxmu015aUwHaFL&pid=Api&P=0&h=180");
+}
+
+header {
+    background: rgba(245, 245, 220, 0.529);
+    color: #04011d;
+    background-size:cover;
+    text-align: center;
+    padding: 9px 0;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 100px;
+    background-color: #a5a58d99;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.review {
+    margin-bottom: 20px;
+    padding: 50px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.review-title {
+    font-size: 1.2em;
+}
+
+.review-content {
+    font-size: 1em;
+}
+
+
+

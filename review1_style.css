@@ -1,0 +1,84 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(172, 172, 172)
+}
+
+* {
+    box-sizing: border-box;
+}
+  
+.bg-image {
+    background-image: url("bbb.png");
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    height: 100%; 
+
+    background-position: center;
+    background-size: cover;
+}
+
+.bg-text {
+    background-color: rgba(237, 201, 123, 0.248);
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 40%;
+    padding: 20px;
+    text-align: center;
+    height: 70%;
+}
+
+input{
+    padding: 2em;
+    border-radius: 6%;
+}
+                  
+.review {
+    margin-bottom: 20px;
+    padding: 50px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.review-title {
+    font-size: 1.2em;
+}
+
+.review-content {
+    font-size: 1em;
+}
+
+h1{
+    text-indent: 22px;
+    text-align:center
+}
+.overall{
+    width: 50%;
+    text-align: left;
+    border: #f9f9f9;
+    /* background: linear-gradient(45deg,rgb(0, 0, 0, 0.427),rgb(7, 7, 7),rgb(105, 105, 105)); */
+    border-radius: 10px ;
+    background-position-x: right;
+    background-position-y:top ;
+}
+select{
+    width: 40%;
+    padding:1em;
+    text-align:center;
+    
+}

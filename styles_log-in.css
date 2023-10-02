@@ -1,0 +1,81 @@
+
+body{
+    /* background: rgb(0, 0, 0); */
+    background:url("blur.png");
+    background-position: center;    
+}
+.login{
+    width: 382px;
+    overflow: hidden;
+    margin: auto 58%;
+    text-align: right;
+    margin: 20 0 0 450px;
+    padding: 100px 30px;
+    /* background: linear-gradient(45deg,rgb(0, 0, 0, 0.427),rgb(7, 7, 7),rgb(105, 105, 105)); */
+    border-radius: 10px ;
+}
+h2{
+    text-align: center;
+    font-family: Cambria , Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: xx-large;
+    padding: 20px;
+    color: beige;
+    letter-spacing: 10px;
+}
+label{
+    color: beige;
+    font-size: 17px;
+}
+#Uname{
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    padding-left: 8px;
+}
+#Pass{
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    padding-left: 8px;
+
+}
+#log{
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 17px;
+    padding-left: 7px;
+    color: rgb(50, 50, 50);
+
+
+}
+#login{
+    background-position-x:right;
+    background-position-y: center;
+}
+span{
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+}
+a{
+    float: right;
+    background-color: rgba(0, 0, 0, 0);
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+
+.photo{
+    
+    background-image: url("https://elements-cover-images-0.imgix.net/44f99c8b-b32a-4494-ab31-1a6cd422f3fd?auto=compress&crop=edges&fit=crop&fm=jpeg&h=630&w=1200&s=10b7bb16b3303f25e198e3246492e635");
+    background-repeat: no-repeat;
+    background-size: cover ;
+    width: 30%;
+    object-position:40%;
+    margin-left:50px;
+    height: 500px; 
+    float: left;
+    border-radius: 20px;
+    padding-left: 20px;
+}
