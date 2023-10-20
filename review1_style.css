@@ -2,21 +2,14 @@ body, html {
     height: 100%;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(172, 172, 172)
-}
-
-* {
-    box-sizing: border-box;
-}
-  
-.bg-image {
+    background-color: rgb(172, 172, 172);
     background-image: url("bbb.png");
-    filter: blur(8px);
-    -webkit-filter: blur(8px);
+    /* background-size: 200%; */
+    background-repeat: no-repeat;
     height: 100%; 
 
-    background-position: center;
-    background-size: cover;
+    background-position:left;
+    background-size: 45% 1000000000% ;
 }
 
 .bg-text {
@@ -28,11 +21,11 @@ body, html {
     top: 50%;
     left: 25%;
     transform: translate(-50%, -50%);
-    z-index: 2;
+    float:left;
     width: 40%;
     padding: 20px;
     text-align: center;
-    height: 70%;
+    
 }
 
 input{
@@ -71,13 +64,13 @@ h1{
     width: 50%;
     text-align: left;
     border: #f9f9f9;
-    /* background: linear-gradient(45deg,rgb(0, 0, 0, 0.427),rgb(7, 7, 7),rgb(105, 105, 105)); */
+    background: linear-gradient(45deg,rgba(210, 179, 179, 0.427),rgb(139, 116, 116),rgb(105, 105, 105));
     border-radius: 10px ;
-    background-position-x: right;
-    background-position-y:top ;
+    margin-left: 50%;
+    padding:2em;
 }
 select{
-    width: 40%;
+    width: 50%;
     padding:1em;
     text-align:center;
     
