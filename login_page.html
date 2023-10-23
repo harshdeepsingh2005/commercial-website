@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <head>
     <title>Login Form</title>
@@ -7,11 +7,21 @@
 </head>
 <body>
     <h2><u>Login Page</u></h2>
-   <div>
+   <div class="container">
         <div class="photo">
-            <p> </p>
+            <div class="mySlides fade" >
+                <img src="649771.jpg" style="width: 100%;object-fit: cover;">
+            </div>
+        
+            <div class="mySlides fade" >
+                <img src="tree.jpg" style="width: 100%;object-fit: cover;">
+            </div>
+        
+            <div class="mySlides fade" >
+                <img src="tree2.jpg" style="width: 100%;object-fit: cover;">
+            </div>
         </div>
-        <div class="login">
+        <div class="login stack-top">
             <form id="login" method="get" action="login.php">
                 <label><b>User Name
                 </b>
@@ -31,12 +41,130 @@
                 <a href="rewrite_password.com">Forgot Password</a>
             </form>
         </div>
+        <script>
+            let slideIndex = 0;
+            showSlides();
+            function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            slides[slideIndex-1].style.display = "block";
+            setTimeout(showSlides, 4500); // Change image every 2 seconds
+            }
+        </script>
     </div> 
 </body>
+</html>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles_log-in.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container">
+        <header>LOGIN PAGE</header>
+        <div class="slidesshow" style="width: 50%;">
+            <div class="mySlides fade" >
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT8TJUHyvKm9hmFvOyp8DwxB7ZxgLMQqd4f7ZItO22oeLcvnjQD4v2KYupL63tgzBdC3I&usqp=CAU" >
+            </div>
+        
+            <div class="mySlides fade" >
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMIskllZFbrZDxcOWPS9-DhhCmUtEr5PK0Lg&usqp=CAU" >
+            </div>
+        
+            <div class="mySlides fade" >
+                <img src="data:image/jpeg;base64,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">
+            </div>
+        </div>
+        <div class="login" style="width: 50%;">
+            <form id="login" method="get" action="login.php">
+                <label><b>User Name
+                </b>
+                </label><br><br>
+                <input type="text" name="Uname" id="Uname" placeholder="Username">
+                <br><br>
+                <label><b>Your Password
+                </b>
+                </label><br><br>
+                <input type="Password" name="Pass" id="Pass" placeholder="Password">
+                <br><br>
+                <input type="button" name="log" id="log" value="Log In Here">
+                <br><br>
+                <input type="checkbox" id="check">
+                <span>Remember me</span>
+                
+                <a href="rewrite_password.com">Forgot Password</a>
+            </form>
+        </div>
+    </div>
+    <script>
+        let slideIndex = 0;
+        showSlides();
+        function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        slides[slideIndex-1].style.display = "block";
+        setTimeout(showSlides, 4500); // Change image every 2 seconds
+        }
+    </script>
+</body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <script>document.write('<script src="http://'
     + (location.host || 'localhost').split(':')[0]
     + ':35729/livereload.js?snipver=1"></'
-    + 'script>')</script>
+    + 'script>')</script> 

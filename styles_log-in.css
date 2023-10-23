@@ -1,81 +1,86 @@
-
-body{
-    /* background: rgb(0, 0, 0); */
-    background:url("blur.png");
-    background-position: center;    
+/* .photo{
+    width: 50%;
+    height: 100%;            
+    top: 0;
+    left: 0;
+}
+img{
+    
 }
 .login{
-    width: 382px;
-    overflow: hidden;
-    margin: auto 58%;
-    text-align: right;
-    margin: 20 0 0 450px;
-    padding: 100px 30px;
-    /* background: linear-gradient(45deg,rgb(0, 0, 0, 0.427),rgb(7, 7, 7),rgb(105, 105, 105)); */
-    border-radius: 10px ;
-}
-h2{
+    width:min-content;
+    margin: 0% 6%;
+    height: 50%;   
+    width: 100%;         
+    position: absolute;
+    top: 5em;
+    left: 0;
+    font-size: larger;
     text-align: center;
-    font-family: Cambria , Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: xx-large;
-    padding: 20px;
-    color: beige;
-    letter-spacing: 10px;
 }
-label{
-    color: beige;
-    font-size: 17px;
-}
-#Uname{
-    width: 300px;
-    height: 30px;
-    border: none;
-    border-radius: 3px;
-    padding-left: 8px;
-}
-#Pass{
-    width: 300px;
-    height: 30px;
-    border: none;
-    border-radius: 3px;
-    padding-left: 8px;
-
-}
-#log{
-    width: 300px;
-    height: 30px;
-    border: none;
-    border-radius: 17px;
-    padding-left: 7px;
-    color: rgb(50, 50, 50);
+.stack-top{
+    margin: 20px;
+} */
 
 
-}
-#login{
-    background-position-x:right;
-    background-position-y: center;
-}
-span{
-    color: rgb(255, 255, 255);
-    font-size: 17px;
-}
-a{
-    float: right;
-    background-color: rgba(0, 0, 0, 0);
-    text-transform: uppercase;
-    font-family: sans-serif;
-}
 
-.photo{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body{
+    background-image: url(649771.jpg);
+    background-size: cover;
+    font-family: monospace , Times New Roman ,  Helvetica;
     
-    background-image: url("https://elements-cover-images-0.imgix.net/44f99c8b-b32a-4494-ab31-1a6cd422f3fd?auto=compress&crop=edges&fit=crop&fm=jpeg&h=630&w=1200&s=10b7bb16b3303f25e198e3246492e635");
-    background-repeat: no-repeat;
-    background-size: cover ;
-    width: 30%;
-    object-position:40%;
-    margin-left:50px;
-    height: 500px; 
-    float: left;
-    border-radius: 20px;
-    padding-left: 20px;
+}
+header{
+    color:rgb(255, 239, 169);
+    text-align: center;
+    font-size:xxx-large;
+    letter-spacing:4px ;
+}
+.container{
+    background-color: rgba(153, 64, 123, 0.238);
+    width: 50%;
+    height: 70%;
+    border-radius:20px;
+    margin-top: 3em;
+    margin-left: 20em;
+    padding:2em;
+    box-shadow: 5px 8px 10px rgb(126, 2, 62);
+
+}
+.slidesshow{ 
+    padding-top:5em;
+    position: relative;
+    width: 50%;
+    height: 80%;
+}
+
+.login{
+    position: relative;
+    width: min-content;
+    margin-top: -25em;
+    float:right;
+    color:rgb(255, 239, 169);
+
+}
+#pass,#Uname{
+    width:300px;
+    height:30px;
 }
