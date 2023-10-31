@@ -2,51 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="practice.css" rel="stylesheet">
     <title>Document</title>
-    <style>
-        #Details{
-            background-color: yellow;
-        }
-        #IPL{
-            background-color: green;
-        }
-        #session{
-            text-align: center;
-        }
-    </style>
 </head>
 <body>
-    <table border="1" cellpadding="2" cellspacing="10">
-    
-        
-        <tr id="Details">
-            <th colspan="4">Details of a player</th>
-        </tr>
-        <tr>
-            <td rowspan="3" id="IPL">IPL Teams<br><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MI<br><br> &nbsp;&nbsp;&nbsp;&nbsp;RCB</th>
-            <th>Column 2</th>
-            <th>Column 3</th>
-            <th>column 4</th>
-        </tr>
-        <tr>
-            
-            <td>rohit</td>
-            <td>India</td>
-            <td>45</td>
-        </tr>
-        <tr>
-            
-            <td>Gayle</td>
-            <td>West Indies</td>
-            <td>333</td>
-        </tr>
-        <tr>
-            <td colspan="4" id="session">2023-2024</td>
-        </tr>
-
-    </table>
+    <div class="login">
+        <form action=""></form>
+        <h1>FORM</h1>
+        <label id="usr_name">FIRST NAME</label><br>
+        <input type="text" name="F_NAME" placeholder="EX: Harshdeep"><br>
+        <label id="usr_name">LAST NAME</label><br>
+        <input type="text" name="L_NAME" placeholder="EX: Singh"><br>
+        <label>e-mail</label><br>
+        <input type="email" name="e-mail" placeholder="EX: abc@gmail.com"><br>
+        <label>gender</label><br>
+        <label for="male"><input type="radio" name="gender">male</label><br>
+        <label for="female"><input type="radio" name="gender">female</label><br>
+        <label >HOBBIES</label><br>
+        <input type="checkbox" checked><label>reading</label><br>
+        <input type="checkbox" ><label>chess</label><br>
+        <input type="checkbox" ><label>combat</label><br>
+        <input type="checkbox" checked><label>drama</label><br>
+        <input type="submit">
+    </form>
+    </div>
 </body>
 </html>
-
-
