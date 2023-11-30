@@ -1,21 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Movie booking</title>
-</head>
-<body>
+    <link href="home_style.css" rel="stylesheet">
+    <title>HomePage</title>
+ </head>
+ <body>
     <section class="top-bar">
         <div class="left-content">
-            <h2 class="title">M4You</h2>
+            <h2 class="title">BlurBox<img src="BlurBox.png" class="logo" height="25px" width="25px"></h2>
             <ul class="navigation">
-                <li><a href="#">Home</a></li>
-                <li><a class="active" href="#">Movies</a></li>
-                <li><a href="#">Theaters</a></li>
-                <li><a href="#">News</a></li>
+                <li><a href="rental.html" class="link">RENTAL</a></li>
+                <li><a href="Ticket.html" class="link">TICKET</a></li>
+                <li><a href="reveiw1.html" class="link">REVEIW</a></li>
             </ul>
         </div>
         <div class="right-content">
@@ -28,109 +26,22 @@
             <img src="menu.png" alt="" class="menu">
         </div>
     </section>
-    <section class="main-container">
-        <div class="sidebar">
-            <form action="#">
-                <div class="sidebar-groups">
-                    <h3 class="sg-title">Categories</h3>
-                    <input type="checkbox" id="adventure" name="adventure" value="adventure">
-                    <label for="adventure">Adventure</label><br>
-                    <input type="checkbox" id="action" name="action" value="action">
-                    <label for="action">Action</label><br>
-                    <input type="checkbox" id="animation" name="animation" value="animation">
-                    <label for="animation">Animation</label><br>
-                    <input type="checkbox" id="comedy" name="comedy" value="comedy">
-                    <label for="comedy">Comedy</label><br>
-                    <input type="checkbox" id="science" name="science" value="science">
-                    <label for="science">Science Fiction</label><br>
-                    <input type="checkbox" id="thriller" name="thriller" value="thriller">
-                    <label for="thriller">Thriller</label><br>
-                    <input type="checkbox" id="history" name="history" value="history">
-                    <label for="history">History</label><br>
-                    <input type="checkbox" id="documentary" name="documentary" value="documentary">
-                    <label for="documentary">Documentary</label><br>
-                    <input type="checkbox" id="fantasy" name="fantasy" value="fantasy">
-                    <label for="fantasy">Fantasy</label><br>
-                </div><div></div>
-                <div class="sidebar-groups">
-                    <h3 class="sg-title">Language</h3>
-                    <input type="checkbox" id="english" name="english" value="english">
-                    <label for="english">English</label><br>
-                    <input type="checkbox" id="spanish" name="spanish" value="spanish">
-                    <label for="spanish">Spanish</label><br>
-                    <input type="checkbox" id="hindi" name="hindi" value="hindi">
-                    <label for="hindi">Hindi</label><br>
-                </div>
-                <div class="sidebar-groups">
-                    <h3 class="sg-title">Time</h3>
-                    <input type="radio" id="morning" name="time" value="morning">
-                    <label for="morning">Morning</label><br>
-                    <input type="radio" id="night" name="time" value="night">
-                    <label for="night">Night</label><br>
-                </div>
-                <div class="sidebar-groups">
-                    <a href="#" class="btn-l btn">Apply Filters</a>
-                </div>
-            </form>
+    <section class="main">
+        <div class="written">
+            <img src="cinema.jpeg">
+            <div id="written"><p>Introducing our innovative online movie ticket system, where the thrill of cinema begins with just a click. Seamlessly designed for movie enthusiasts like you, our platform offers a user-friendly interface, allowing you to browse through the latest releases, select your preferred showtimes, and choose the best seats—all from the comfort of your device. Say goodbye to long queues and hello to convenience as you effortlessly book your tickets with secure online transactions. Whether you're planning a solo movie night or a group outing with friends, our online movie ticket system ensures a hassle-free and enjoyable cinematic experience. Embrace the future of moviegoing with us, where booking tickets is as exciting as the films themselves.</p></div>
+            <form action="Ticket.html">
+                <button type="submit" class="button">TICKET</button>
+              </form>
+
         </div>
-        <div class="movies-container">
-            <div class="upcoming-img-box">
-                <img src="upcoming.jpg" alt="">
-                <p class="upcoming-title">Upcoming Movie</p>
-                <div class="buttons">
-                    <a href="#" class="btn">Book Now</a>
-                    <a href="#" class="btn-alt btn">Play Trailer</a>
-                </div>
-            </div>
-            <div class="current-movies">
-                <div class="current-movie">
-                    <div class="cm-img-box">
-                        <img src="movie1.jpg" alt="">
-                    </div>
-                    <h3 class="movie-title">Jurassic World</h3>
-                    <p class="screen-name">Screen : Platinum</p>
-                    <div class="booking">
-                        <h2 class="price">650 Rs/-</h2>
-                        <a href="#" class="btn">Buy Tickets</a>
-                    </div>
-                </div>
-                <div class="current-movie">
-                    <div class="cm-img-box">
-                        <img src="movie2.jpg" alt="">
-                    </div>
-                    <h3 class="movie-title">Vikram</h3>
-                    <p class="screen-name">Screen : Gold</p>
-                    <div class="booking">
-                        <h2 class="price">500 Rs/-</h2>
-                        <a href="#" class="btn">Buy Tickets</a>
-                    </div>
-                </div>
-                <div class="current-movie">
-                    <div class="cm-img-box">
-                        <img src="movie3.jpg" alt="">
-                    </div>
-                    <h3 class="movie-title">Firestarter</h3>
-                    <p class="screen-name">Screen : Silver</p>
-                    <div class="booking">
-                        <h2 class="price">300 Rs/-</h2>
-                        <a href="#" class="btn">Buy Tickets</a>
-                    </div>
-                </div>
-            </div>
+        <div class="written">
+            <form action="rental.html">
+                <button type="submit" class="button">RENTAL</button>
+              </form>
+            <div id="written">Introducing our innovative online movie rental system! Dive into a world of entertainment from the comfort of your home with just a click. Our platform offers a vast collection of the latest blockbusters, timeless classics, and niche films catering to every cinematic taste. Enjoy the flexibility of renting movies on your schedule, with options for streaming or downloading. With user-friendly interfaces and personalized recommendations, finding the perfect film has never been easier. Say goodbye to late fees and embrace the freedom to watch at your own pace. Elevate your movie nights with our online rental system  where the best of cinema is just a virtual rental away!</div>
+            <img src="rental.jpeg">
         </div>
     </section>
-</body>
-</html> 
-
-
-
-
-
-
-
-
-
-
-
-
-
+ </body>
+ </html>
