@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Ticket Booking</title>
+    <link href="seating.css" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <h1 style="color: #3498db;">Movie Ticket Booking</h1>
+
+        <div id="seat-map">
+            <!-- Seats will be dynamically generated here -->
+        </div>
+
+        <div id="selected-seats">
+            <h2>Selected Seats</h2>
+            <ul id="selected-seats-list"></ul>
+        </div>
+
+        <div id="food-packs-container">
+            <h2 style="color: #3498db;">Food Packs</h2>
+            <ul class="food-list">
+                <li class="food-list-item" data-food="popcorn" data-price="5.00">
+                    <span>Popcorn</span>
+                    <span>$5.00</span>
+                </li>
+                <li class="food-list-item" data-food="soda" data-price="3.50">
+                    <span>Soda</span>
+                    <span>$3.50</span>
+                </li>
+                <li class="food-list-item" data-food="combo" data-price="7.50">
+                    <span>Combo (Popcorn + Soda)</span>
+                    <span>$7.50</span>
+                </li>
+                
+            </ul>
+            <div id="food-prices">
+                <p>Total Price: $<span id="total-price">0.00</span></p>
+                <button id="proceed-to-checkout" onclick="proceedToCheckout()">Proceed to Checkout</button>
+
+            </div>
+        </div>
+
+        <button id="proceed-to-payment" href="checkout.html">Proceed to Payment</button>
+    </div>
+
+    <script src="seating.js"></script>
+</body>
+</html>
+

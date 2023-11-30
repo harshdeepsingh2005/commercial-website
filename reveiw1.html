@@ -3,72 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="review1_style.css" rel="stylesheet">
-    <title>FEEDBACK / Review</title>
+    <link rel="stylesheet" href="review1_style.css">
+    <title>Movie Review</title>
 </head>
 <body>
-    <p></p>
-    <h1><strong><u>FEEDBACK</u> <U>PAGE</U></strong></h1>
+    <div class="container">
+        <header>
+            <h1>Movie Review: Beyond the Horizon</h1>
+        </header>
+        <section id="movieDetails" class="card">
+            <!-- Movie details will be populated dynamically using JavaScript -->
+        </section>
+        <section id="reviewForm" class="card">
+            <h2>Write Your Review</h2>
+            <form id="reviewForm">
+                <label for="review">Your Review:</label>
+                <textarea id="review" name="review" rows="4" required></textarea>
+                <div class="star-rating" onclick="handleStarClick(event)">
+                    <img src="star.png" alt="star" class="star-icon" data-rating="1">
+                    <img src="star.png" alt="star" class="star-icon" data-rating="2">
+                    <img src="star.png" alt="star" class="star-icon" data-rating="3">
+                    <img src="star.png" alt="star" class="star-icon" data-rating="4">
+                    <img src="star.png" alt="star" class="star-icon" data-rating="5">
+                </div>
+                <button type="button" onclick="submitReview()">Submit Review</button>
+            </form>
+        </section>
+        <section id="userReviews" class="card">
+            <!-- User reviews will be populated dynamically using JavaScript -->
+        </section>
     </div>
-    <span class="bg-text">
-        <h3>recent oders</h3> 
-        <header>Review</header>
-        <br>
-        
-        <select name="oders" id="recent">
-            <option value="bedsheets">bedsheets</option>
-            <option value="grocery">grocery</option>
-            <option value="keychains">key chains</option>
-            <option value="toys">toys</option>
-        </select><br>
-        <br>
-        <h3>Comment</h3>
-        <input type="text" placeholder="enter your comment"><br><br><br>
-        <input type="button" value="Submit">
-    </span>
-    <br>
-    <div class="overall">
-        <section class="review">
-            <div class="review-header">
-                <h2>Review Title 1</h2>
-                <p><b>Rating: 4.5/5</b></p>
-                
-                <div>
-                    <br><br>
-                    <input placeholder="enter your comment">
-                </div>
-            </div>
-            <p class="review-content">
-            </p>
-        </section>
-        
-        <section class="review">
-            <div class="review-header">
-                <h2><strong>Review Title 2</strong></h2>
-                <br><br><br>
-                <p><strong>Rating: 5/5</strong></p>
-                <div>
-                    <br><br>
-                    <input placeholder="enter your comment">
-                </div>
-            </div>
-            <p class="review-content">
-            </p>
-        </section>
-    
+    <script src="review1_script.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-<script>document.write('<script src="http://'
-    + (location.host || 'localhost').split(':')[0]
-    + ':35729/livereload.js?snipver=1"></'
-    + 'script>')</script>
