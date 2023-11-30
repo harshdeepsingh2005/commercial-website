@@ -14,7 +14,9 @@ header{
 .container{
     background-color: rgba(153, 64, 123, 0.238);
     width: 50%;
-    height: 70%;
+    height: max-content;
+    display: flex;
+    flex-direction: row ;
     border-radius:20px;
     margin-top: 3em;
     margin-left: 20em;
@@ -32,7 +34,7 @@ header{
 .login{
     position: relative;
     width: min-content;
-    margin-top: -25em;
+    margin-top: -1em;
     float:right;
     color:rgb(255, 239, 169);
 
