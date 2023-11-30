@@ -1,54 +1,56 @@
-def day(d,m,y,d1,m1,y1):
-    days=0
-    c=0
-    n=[31,28,31,30,31,30,31,31,30,31,30,31]
+# def days_until_birthday(current_date, birthday):
+#     current_year, current_month, current_day = current_date
+#     birth_year, birth_month, birth_day = birthday
+
+#     # If the birthday has already occurred this year, calculate for next year
+#     if (current_month, current_day) > (birth_month, birth_day):
+#         next_birthday_year = current_year + 1
+#     else:
+#         next_birthday_year = current_year
+
+#     # Calculate the days until the next birthday
+#     days_until_birthday = 0
+
+#     while (current_year, current_month, current_day) != (next_birthday_year, birth_month, birth_day):
+#         days_until_birthday += 1
+#         current_day += 1
+
+#         # Handle the end of the month
+#         if current_day > 31 or (current_month in [4, 6, 9, 11] and current_day > 30) or (current_month == 2 and (current_day > 29 or (current_day > 28 and not (current_year % 4 == 0 and (current_year % 100 != 0 or current_year % 400 == 0))))):
+#             current_day = 1
+#             current_month += 1
+
+#             # Handle the end of the year
+#             if current_month > 12:
+#                 current_month = 1
+#                 current_year += 1
+
+#     return days_until_birthday
+
+# # Example usage:
+# current_date = (2023, 11, 24)  # Replace with the current date (year, month, day)
+# birthday_date = (2000, 5, 15)  # Replace with your birthday (year, month, day)
+
+# days_until = days_until_birthday(current_date, birthday_date)
+
+# print(f"Days until your next birthday: {days_until} days")
+
+
+
+
+
+# n=10
+# s={ (x,y,z) for x in range(1,n+1) for y in range(x,n+1) for z in range(y,n+1) if z**2 == (x**2 + y**2 )}
+# print(sorted(s))
+
+
+
+
+class Person:
+    def __init__(self,name,age):
+        self.name=name
+        self.age=age
     
-    if m!=m1:
-        if y!=y1:
-            for i in range(y+1,y1):
-                c=leap_year(i)
-                if c==1:
-                    days+=366
-                else:
-                    days+=365
-        
-            days+=month(1,m,leap_year(y))
-            days+=month(m1,12,leap_year(y1))
-        if d!=d1  :
-            days+=d1
-            if leap_year(y)==1 and m==2:
-                days+=(d-29)
-            else:
-                days+= (d-n[m-1])
-        
-    return days
-      
-def leap_year(y):
-    if y%4==0:
-        return 1
-    else:
-        return 0
-
-def month( x, y ,c):
-    day=0
-    month=[31,28,31,30,31,30,31,31,30,31,30,31]
-    for i in range(x,y):
-        if i==2 and c==1:
-            day+=29
-        else:
-            day+=month[i-1]
-    return day
-date1=input("input birth date seperated by spaces")
-l=list(map(int,date1.split()))
-d= l[0]
-m= l[1]
-y= l[2]
-
-date2=input("input date seperated by spaces")
-l=list(map(int,date2.split()))
-d1= l[0]
-m1= l[1]
-y1= l[2]
-
-x=day(d=d,m=m,y=y,d1=d1,m1=m1,y1=y1)
-print("days =", x)
+p1=Person("Raj")
+print(p1.name)
+print(p1.age)

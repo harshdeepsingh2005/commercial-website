@@ -1,77 +1,89 @@
-body, html {
-    height: 100%;
+body {
+    font-family: 'Arial', sans-serif;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(172, 172, 172);
-    background-image: url("bbb.png");
-    /* background-size: 200%; */
-    background-repeat: no-repeat;
-    height: 100%; 
-
-    background-position:left;
-    background-size: 45% 1000000000% ;
+    padding: 0;
+    background-color: #282c35;
+    color: #fff;
 }
 
-.bg-text {
-    background-color: rgba(237, 201, 123, 0.248);
-    color: white;
-    font-weight: bold;
-    border: 3px solid #f1f1f1;
-    position: absolute;
-    top: 50%;
-    left: 25%;
-    transform: translate(-50%, -50%);
-    float:left;
-    width: 40%;
+.container {
+    max-width: 800px;
+    margin: 20px auto;
     padding: 20px;
+    background-color: #373c49;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    border-radius: 12px;
+}
+
+header {
     text-align: center;
-    
-}
-
-input{
-    padding: 2em;
-    border-radius: 6%;
-}
-                  
-.review {
     margin-bottom: 20px;
-    padding: 50px;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 5px;
 }
 
-.review-header {
+h1, h2 {
+    color: yellow; /* Set the color to yellow */
+}
+
+.card {
+    background-color: #444;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+}
+
+form {
+    display: grid;
+    grid-gap: 15px;
+}
+
+button {
+    padding: 12px;
+    background-color: #61dafb;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4fa3d1;
+}
+
+#userReviews {
+    margin-top: 20px;
+}
+
+.review {
+    border: 1px solid #666;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.review p {
+    margin: 10px 0;
+    padding-left: 25px;
+}
+
+.star-rating {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    margin-bottom: 10px;
 }
 
-.review-title {
-    font-size: 1.2em;
+.star-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 8px; /* Add a bit of gap between star icons */
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    background-color: yellow; /* Set the background color to yellow */
+    border-radius: 50%; /* Set the border radius to 50% */
 }
 
-.review-content {
-    font-size: 1em;
-}
-
-h1{
-    text-indent: 22px;
-    text-align:center
-}
-.overall{
-    width: 50%;
-    text-align: left;
-    border: #f9f9f9;
-    background: linear-gradient(45deg,rgba(210, 179, 179, 0.427),rgb(139, 116, 116),rgb(105, 105, 105));
-    border-radius: 10px ;
-    margin-left: 50%;
-    padding:2em;
-}
-select{
-    width: 50%;
-    padding:1em;
-    text-align:center;
-    
+.star-icon.selected {
+    transform: scale(1.2);
+    background-color: #fdd835; /* Set a different color for selected stars if desired */
+    border-radius: 50%; /* Set the border radius to 50% */
 }
