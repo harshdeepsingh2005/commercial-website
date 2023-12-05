@@ -8,8 +8,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     let totalFoodPrice = 0;
 
-    const rows = 5;
-    const seatsPerRow = 13; // Adjust the number of seats per row
+    const rows = 10;
+    const seatsPerRow = 13; 
 
     for (let row = 1; row <= rows; row++) {
 for (let seat = 1; seat <= seatsPerRow; seat++) {
