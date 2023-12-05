@@ -4,6 +4,47 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Joan', serif;
+    text-shadow: 2px 1px 8px rgb(6, 6, 42);
+    word-spacing: 5px;
+}
+body{
+    position: absolute;
+}
+.fancy-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background: linear-gradient(to right, #4CAF50, #45a049); /* Gradient background */
+    border: 1px solid #0a2f0b;
+    transition: background 0.3s ease;
+    box-shadow: 5px 5px 8px rgb(128, 128, 128);
+}
+.button{
+    text-align: center;
+}
+/* Add a subtle hover effect */
+.fancy-button:hover {
+    background: linear-gradient(to right, #45a049, #4CAF50);
+}
+.footer {
+    background-color: #1e1f26;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.contact-info {
+    margin-top: 10px;
+    font-size: 14px;
 }
 a {
     text-decoration: none;
@@ -67,13 +108,18 @@ a {
     border-radius: 50%;
     overflow: hidden;
 }
-
+hr{
+    background-color: #000000;
+}
 body { 
     background: url(background.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+p{
+    padding-bottom: 6px;
 }
 main{
     display: grid;
@@ -84,10 +130,15 @@ main{
     display: flex;
     flex-direction: row;
     padding: 2em;
-    background-color: rgba(240, 255, 255, 0.507);
+    background-color: rgba(240, 255, 255, 0.608);
     margin:6em;
-    border-radius: 1em;
+    border-radius: 1em;text-align: justify;
 }
 #written{
     padding:0 3em ;
+    text-align: justify;
+}
+.image{
+    border-radius: 20px;
+    box-shadow: 5px 5px 8px grey;
 }

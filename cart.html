@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Shopping Cart</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a; /* Dark background color */
+            color: #fff; /* White text color */
+        }
+
+        header {
+            background-color: #ffcc00; /* Yellow header background color */
+            color: #333; /* Dark text color */
+            text-align: center;
+            padding: 10px;
+        }
+
+        .cart-container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #333; /* Dark container background color */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #555; /* Dark border color */
+            padding: 10px 0;
+        }
+
+        .cart-item img {
+            max-width: 100px;
+            margin-right: 10px;
+            border-radius: 8px; /* Rounded corners for images */
+        }
+
+        .checkout-btn {
+            display: block;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #ffcc00; /* Yellow button background color */
+            color: #333; /* Dark button text color */
+            text-align: center;
+            text-decoration: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .checkout-btn:hover {
+            background-color: #ffd633; /* Lighter yellow on hover */
+        }
+
+        #total {
+            color: #ffcc00; /* Yellow color for the total */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Your Shopping Cart</h1>
+    </header>
+
+    <div class="cart-container" id="cart-container">
+        <!-- Cart items will be added here -->
+    </div>
+
+    <div class="cart-container">
+        <p>Total: ₹<span id="total">0.00</span></p>
+        <button onclick="checkout()" class="checkout-btn">Proceed to Checkout</button>
+    </div>
+
+    <script>
+        const products = [{ id: 1, name: "Product 1", price: 19.99, image: "movie1.jpg" },
+            { id: 2, name: "Product 2", price: 29.99, image: "movie2.jpg" }];
+
+        // Function to render cart items
+        function renderCart() {
+            const cartContainer = document.getElementById("cart-container");
+            cartContainer.innerHTML = "";
+
+            let total = 0;
+
+            products.forEach(product => {
+                const cartItem = document.createElement("div");
+                cartItem.classList.add("cart-item");
+
+                cartItem.innerHTML = `
+                    <img src="${product.image}" alt="${product.name}">
+                    <div>
+                        <h3>${product.name}</h3>
+                        <p>Price: $${product.price.toFixed(2)}</p>
+                    </div>
+                    <button onclick="removeItem(${product.id})">Remove</button>
+                `;
+
+                total += product.price;
+                cartContainer.appendChild(cartItem);
+            });
+
+            document.getElementById("total").textContent = total.toFixed(2);
+        }
+
+        // Function to remove item from the cart
+        function removeItem(productId) {
+            // This is a placeholder function; in a real application, you would update the cart state.
+            alert(`Remove item with ID ${productId}`);
+        }
+
+        // Function to simulate the checkout process
+        function checkout() {
+            // This is a placeholder function; in a real application, you would handle the checkout process.
+            alert("Proceeding to checkout");
+        }
+        function confirmCheckout() {
+            if (window.confirm("Are you sure you want to proceed to payment?")) {
+                // If the user clicks "OK," simulate the checkout process
+                alert("Proceeding to checkout");
+            } else {
+                // If the user clicks "Cancel," do nothing
+            }
+        }
+
+        // Initial render
+        renderCart();
+    </script>
+</body>
+</html>
